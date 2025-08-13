@@ -1,0 +1,15 @@
+services:
+  everdo-docker:
+    image: everdo-docker
+    container_name: everdo
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Berlin # <- Change to your timezone
+    ports:
+      - 5800:5800
+      - 5900:5900
+      - 11111:11111
+    volumes:
+      - /home/user/docker-volumes/everdo/config:/config # <- Change to your desired directory
+    restart: unless-stopped
