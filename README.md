@@ -6,7 +6,7 @@ Run the GTD software [Everdo](https://everdo.net) in a Docker container and acce
 ## Disclaimer
 [Everdo](https://everdo.net) is proprietary software that requires purchase of the [Pro version](https://everdo.net/pricing) (one-time purchase) for full functionality. However, the free version that possesses some restrictions regarding number of possible projects, areas etc. can be used indefinitely. [Everdo can be downloaded here.](https://everdo.net/#download-form)
 
-*I am not connected to the Everdo developer in any capacity and don't own any rights regarding this software. I am just presenting an alternative way of running the software in a Docker setup.*
+**I am not connected to the Everdo developer in any capacity and don't own any rights regarding this software. I am just presenting an alternative way of running the software in a Docker setup.**
 
 ## Motivation
 I am an [Everdo](https://everdo.net) user since a couple of years and really enjoy the clean and accessible design of this to-do-list software following the ["Getting Things Done" (GTD)]() principle.
