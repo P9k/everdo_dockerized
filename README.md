@@ -1,5 +1,5 @@
 # everdo_dockerized
-Run the GTD software [Everdo](https://everdo.net) in a Docker container and access it via browser. Allows remote synchronization with the usually required [ESS protocol][https://help.everdo.net/docs/sync/ess/]. Utilizes the amazing [Docker GUI baseimage](https://github.com/jlesage/docker-baseimage-gui) by [jlesage](https://github.com/jlesage).
+Run the GTD software [Everdo](https://everdo.net) in a Docker container and access it via browser. Allows remote synchronization. Utilizes the amazing [Docker GUI baseimage](https://github.com/jlesage/docker-baseimage-gui) by [jlesage](https://github.com/jlesage).
 
  <img width="1693" height="973" alt="grafik" src="https://github.com/user-attachments/assets/63f3a3a9-4d58-4ccd-a118-2063904c742e" />
 
