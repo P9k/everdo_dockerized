@@ -11,5 +11,5 @@ services:
       - 5900:5900
       - 11111:11111
     volumes:
-      - /home/user/docker-volumes/everdo/config:/config # <- Change to your desired directory
+      - /home/user/docker-volumes/everdo/config:/config/xdg/config # <- Change to your desired directory
     restart: unless-stopped
