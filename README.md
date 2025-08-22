@@ -28,7 +28,7 @@ Everdo runs on several operating systems and provides installation packages for 
  <img width="1693" height="973" alt="grafik" src="https://github.com/user-attachments/assets/63f3a3a9-4d58-4ccd-a118-2063904c742e" />
 
 ## How to use your dockerized Everdo instance as a synchronization server for your clients
-0. Optional, but highly recommended: Activate the full version of Everdo with your purchased key file. For that, first place your key file in the `everdo` directory of the persistent volume that you've created. Then in Everdo, select `Add Product Key` from Hamburger menu in the top-right and navigate to `/config/xdg/config/everdo` where you should see your key file. Click to activate.
+0. Optional, but highly recommended: Activate the [full version of Everdo](https://everdo.net/pricing/) with your purchased key file. For that, first place your key file in the `everdo` directory of the persistent volume that you've created. Then in Everdo, select `Add Product Key` from Hamburger menu in the top-right and navigate to `/config/xdg/config/everdo` where you should see your key file. Click to activate.
 <img width="1687" height="980" alt="grafik" src="https://github.com/user-attachments/assets/f75f35b1-7780-4c08-bd35-059f83667568" />
 <img width="411" height="177" alt="grafik" src="https://github.com/user-attachments/assets/9cdebf0d-5f99-4591-a5e6-054e83f4d292" />
 
