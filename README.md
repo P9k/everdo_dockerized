@@ -23,7 +23,7 @@ Everdo runs on several operating systems and provides installation packages for 
 ## How to build your image locally and deploy the container
  1. Clone the repository: You need the files `Dockerfile`, `startapp.sh` and `compose.yaml`
  2. Use the `Dockerfile` to build your local image
- 3.Use the provided `compose.yaml` as a template to deploy via Docker compose, e.g. using Portainer. Adjust the path for the persistent volume so Everdo can store the data even after restarting the container. Note that the exposed ports in the compose file are `5800` and `5900` (for VNC) and `11111` (for the Everdo API, i.e. to use the synchronization feature)
+ 3. Use the provided `compose.yaml` as a template to deploy via Docker compose, e.g. using Portainer. Adjust the path for the persistent volume so Everdo can store the data even after restarting the container. Note that the exposed ports in the compose file are `5800` and `5900` (for VNC) and `11111` (for the Everdo API, i.e. to use the synchronization feature)
  4. Go to the published port (5800) of the machine running your docker instance, e.g. (192.168.178.2:5800)[] or (my-homelab:5800)[] and you should see the program showing the Everdo "Welcome screen" via VNC like this
 
 
