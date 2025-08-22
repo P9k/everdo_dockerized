@@ -1,10 +1,10 @@
 # everdo_dockerized
-Run the GTD software [Everdo](https://everdo.net) in a Docker container and access it via browser. Allows remote synchronization with the usually required (ESS protocol)[https://help.everdo.net/docs/sync/ess/]. Utilizes the amazing [Docker GUI baseimage](https://github.com/jlesage/docker-baseimage-gui) by [jlesage](https://github.com/jlesage).
+Run the GTD software [Everdo](https://everdo.net) in a Docker container and access it via browser. Allows remote synchronization with the usually required [ESS protocol][https://help.everdo.net/docs/sync/ess/]. Utilizes the amazing [Docker GUI baseimage](https://github.com/jlesage/docker-baseimage-gui) by [jlesage](https://github.com/jlesage).
 
  <img width="1693" height="973" alt="grafik" src="https://github.com/user-attachments/assets/63f3a3a9-4d58-4ccd-a118-2063904c742e" />
 
 ## Disclaimer
-[Everdo](https://everdo.net) is proprietary software that requires purchase of the (Pro version)[https://everdo.net/pricing/] (one-time purchase) for full functionality. However, the free version that possesses some restrictions regarding number of possible projects, areas etc. can be used indefinitely. [Everdo can be downloaded here.](https://everdo.net/#download-form)
+[Everdo](https://everdo.net) is proprietary software that requires purchase of the [Pro version](https://everdo.net/pricing) (one-time purchase) for full functionality. However, the free version that possesses some restrictions regarding number of possible projects, areas etc. can be used indefinitely. [Everdo can be downloaded here.](https://everdo.net/#download-form)
 
 I am not connected to the Everdo developer in any capacity and don't own any rights regarding this software. I am just presenting an alternative way of running the software in a Docker setup.
 
@@ -35,13 +35,13 @@ Everdo runs on several operating systems and provides installation packages for 
 1. Activate the API: Go to `Settings`, `API`, change the `IP/Hostname` to `0.0.0.0` (so it listens for every incoming traffic), change the `API Key` to something else if you like, click the checkmark in case it is not activated and restart the container in order to activate the API settings (there should be a notification that the API is listening when starting up)
 <img width="436" height="335" alt="grafik" src="https://github.com/user-attachments/assets/89141c3e-8b36-481c-97ca-2eaf70fec29b" />
 
-1.5. Optional: Forward port 11111. In order to allow your clients to communicate with the server, you need to open the port `11111` in your router and have either a static IP or a dynamic DNS service (in my opinion, (desec.io)[] is pretty good)
+2. Optional: Forward port `11111`. In order to allow your clients to communicate with the server, you need to open the port `11111` in your router and have either a static IP or a dynamic DNS service (in my opinion, [deSEC](desec.io) is pretty good)
 
-2. Set up syncing server: Go to `Settings`, `Sync` and select `Server` as Sync Mode, click `Apply` and restart the container
+3. Set up syncing server: Go to `Settings`, `Sync` and select `Server` as Sync Mode, click `Apply` and restart the container
 
-3. In your client, select `Manual Client` as Sync Mode and enter your servers hostname, the API port `11111`, the API Key and test one of the Manual Actions to see if the connection works
+4. In your client, select `Manual Client` as Sync Mode and enter your servers hostname, the API port `11111`, the API Key and test one of the Manual Actions to see if the connection works
 
-4. If all went well, you have successfully set up remote synchronization with your dockerized Everdo instance - enjoy! :)
+5. If all went well, you have successfully set up remote synchronization with your dockerized Everdo instance - enjoy! :)
 
 
 
