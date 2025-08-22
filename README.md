@@ -25,7 +25,7 @@ Everdo runs on several operating systems and provides installation packages for 
  2. Use the `Dockerfile` to build your local image
  3. Use the provided `compose.yaml` as a template to deploy via Docker compose, e.g. using Portainer. Adjust the path for the persistent volume so Everdo can store the data even after restarting the container. Note that the exposed ports in the compose file are `5800` and `5900` (for VNC) and `11111` (for the Everdo API, i.e. to use the synchronization feature)
  4. Go to the published port (5800) of the machine running your docker instance, e.g. [192.168.178.2:5800]() or [my-homelab:5800]() and you should see the program showing the Everdo "Welcome screen" via VNC like this
-
+ <img width="1693" height="973" alt="grafik" src="https://github.com/user-attachments/assets/63f3a3a9-4d58-4ccd-a118-2063904c742e" />
 
 ## How to use your dockerized Everdo instance as a synchronization server for your clients
 0. Optional, but highly recommended: Activate the full version of Everdo with your purchased key file. For that, first place your key file in the `everdo` directory of the persistent volume that you've created. Then in Everdo, select `Add Product Key` from Hamburger menu in the top-right and navigate to `/config/xdg/config/everdo` where you should see your key file. Click to activate.
