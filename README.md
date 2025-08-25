@@ -48,7 +48,7 @@ Then open `http://localhost:5800` (or replace localhost with your server IP). Yo
 For [synchronization setup](#synchronization-setup) and remote access (VPN or reverse proxy), see [this section](#synchronization-setup) below.
 
 ## Disclaimer and Warning
-I am not affiliated with the developer of [Everdo](https://everdo.net) and do not own any rights to the software. This project merely provides an alternative way to run Everdo in Docker. [Everdo is proprietary software](https://everdo.net/legal/#license). While the free version can be used indefinitely with certain limitations (number of projects, areas, etc.), the full functionality requires a one-time purchase of the [Pro version](https://everdo.net/pricing/)
+I am not affiliated with the developer of [Everdo](https://everdo.net) and do not own any rights to the software. This project merely provides an alternative way to run Everdo in Docker. [Everdo is proprietary software](https://everdo.net/legal/#license). While the free version can be used indefinitely with certain limitations (number of projects, areas, etc.), the full functionality requires a one-time purchase of the [Pro version](https://everdo.net/pricing/).
 
 **Warning:** Exposing your Everdo instance to the public internet even via or a reverse proxy using TLS encryption is **risky**! Both design and implementation errors can lead to data leaks or compromise. If you require remote access to the dockerized Everdo instance, prefer methods like a VPN into your home network ([Wireguard](https://www.wireguard.com/), [Tailscale](https://tailscale.com/)). 
 
