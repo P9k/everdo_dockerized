@@ -13,6 +13,7 @@ Run the GTD software [Everdo](https://everdo.net) inside a Docker container and 
 - [Motivation](#motivation)
 - [Technical Details](#technical-details)
 - [Build & Deploy (Detailed)](#build--deploy-detailed)
+- [VNC Password](#VNC-password)
 - [Synchronization Setup](#synchronization-setup)  
 - [Secure Remote Access Options](#secure-remote-access-options)  
 ---
@@ -79,6 +80,9 @@ As Everdo is designed with a local-first philosophy, there is no official web ve
 - Access Everdo in your browser:
 
     - Example: `http://192.168.178.2:5800` or `http://my-homelab:5800`. You should see the Everdo welcome screen.
+
+## VNC Password
+Note that you can also add a password to the VNC interface for additional security when accessing the GUI via the browser, if necessary. [You can find the instructions here.](https://github.com/jlesage/docker-baseimage-gui?tab=readme-ov-file#vnc-password)
 
 ## Synchronization Setup
 0. (Optional but recommended) Unlock Pro Features
