@@ -137,7 +137,7 @@ Set up a VPN (e.g., [Wireguard](https://www.wireguard.com/) or [Tailscale](https
 
 Use a reverse proxy such as [Caddy](https://caddyserver.com/docs/quick-starts/reverse-proxy) to expose Everdo securely. You need either a static IP or a dynamic DNS service like [deSEC](https://desec.io/).
 
-Example Caddyfile configuration for forwarding `everdosync.mydomain.com` (with TLS) to Everdo’s API within the internal Docker network:
+Example `Caddyfile` configuration for forwarding `everdosync.mydomain.com` (with TLS) to Everdo’s API within the internal Docker network:
 
 ```
 https://everdosync.mydomain.com:443 {
