@@ -1,4 +1,4 @@
-# everdo_dockerized
+# Everdo Dockerized
 
 Run the GTD software [Everdo](https://everdo.net) inside a Docker container and access it via your browser. This setup enables remote synchronization and leverages the excellent [Docker GUI baseimage](https://github.com/jlesage/docker-baseimage-gui) by [jlesage](https://github.com/jlesage).  
 
