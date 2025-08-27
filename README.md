@@ -115,11 +115,11 @@ Note that you can also add a password to the VNC interface for additional securi
 
     On your Everdo client device:
 
-        Set Sync Mode → `Manual Client`
+   - Set Sync Mode → `Manual Client`
 
-        Enter server hostname, port and API key
+   - Enter server hostname, port and API key
 
-        Test using “Manual Actions” to confirm the connection
+   - Test using “Manual Actions” to confirm the connection
 
 Once manual sync works, switch to `Client` mode and restart the container. This enables automatic synchronization.
 
