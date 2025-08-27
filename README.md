@@ -139,6 +139,7 @@ Use a reverse proxy such as [Caddy](https://caddyserver.com/docs/quick-starts/re
 
 Example Caddyfile configuration for forwarding `everdosync.mydomain.com` (with TLS) to Everdo’s API within the internal Docker network:
 
+```
 https://everdosync.mydomain.com:443 {
     reverse_proxy everdo:11111 {
         transport http {
@@ -146,6 +147,7 @@ https://everdosync.mydomain.com:443 {
         }
     }
 }
+```
 
 After restarting Caddy, requests to `https://everdosync.mydomain.com` → are forwarded with TLS encryption → internal Everdo API.
 
