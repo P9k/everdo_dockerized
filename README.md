@@ -39,10 +39,11 @@ services:
 
 Run it:
 
-- `git clone https://github.com/P9k/everdo_dockerized.git`
+- `git clone https://github.com/P9k/everdo_dockerized.git` (Clone the Github repository)
 - `cd everdo_dockerized`
+- `docker build -t everdo-docker .` (Build the image)
 - Edit `compose.yaml` as necessary (`volumes:` section)
-`docker compose up -d`
+`docker compose up -d` (Run the service in the background)
 
 Then open `http://localhost:5800` (or replace localhost with your server IP). You should see the Everdo welcome screen.
 
