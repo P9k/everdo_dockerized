@@ -1,14 +1,22 @@
 services:
   everdo-docker:
-    image: everdo-docker
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: everdo-docker:2.1
     container_name: everdo
     environment:
       - PUID=1000
       - PGID=1000
       - TZ=Europe/Berlin # <- Change to your timezone
+      - VNC_PASSWORD=password  # VNC password
+      - DISPLAY_WIDTH=1280  # Display width
+      - DISPLAY_HEIGHT=720  # Display height
     ports:
-      - 5800:5800
-      - 5900:5900
+      - 6080:6080  # Web VNC interface (noVNC)
+      - 5900:5900  # Direct VNC
+      - 11112:11112  # Everdo API port
     volumes:
-      - /home/user/docker-volumes/everdo/config:/config/xdg/config # <- Change to your desired directory
+      - /your_host_folder_with/database:/root/.config/everdo # <- Change to your desired directory
     restart: unless-stopped
+
