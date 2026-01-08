@@ -1,5 +1,12 @@
 # Everdo Dockerized
 
+Fork of everdo docker to use appimage from 1.10.4
+Change path to everdo folder in compose.yml
+
+In compose yml expose ports for api, nvc, novnc.
+Add options to change resolution and vnc password.
+
+
 Run the GTD software [Everdo](https://everdo.net) inside a Docker container and access it via your browser. This setup enables remote synchronization and leverages the excellent [Docker GUI baseimage](https://github.com/jlesage/docker-baseimage-gui) by [jlesage](https://github.com/jlesage).  
 
 <img width="1693" height="973" alt="grafik" src="https://github.com/user-attachments/assets/63f3a3a9-4d58-4ccd-a118-2063904c742e" />
