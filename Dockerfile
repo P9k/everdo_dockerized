@@ -44,9 +44,13 @@ RUN wget --no-verbose --timeout=30 --tries=3 \
 # Create startup script
 RUN echo '#!/bin/bash' > /start.sh \
     && echo 'export DISPLAY=:1' >> /start.sh \
+    && echo '# Clean up X11 lock files from previous sessions' >> /start.sh \
+    && echo 'rm -f /tmp/.X1-lock /tmp/.X11-unix/X1' >> /start.sh \
     && echo 'RESOLUTION=${DISPLAY_WIDTH:-1920}x${DISPLAY_HEIGHT:-1080}' >> /start.sh \
     && echo 'Xvfb :1 -screen 0 ${RESOLUTION}x24 &' >> /start.sh \
+    && echo 'sleep 2' >> /start.sh \
     && echo 'fluxbox &' >> /start.sh \
+    && echo 'sleep 1' >> /start.sh \
     && echo 'x11vnc -display :1 -forever -passwd ${VNC_PASSWORD:-password} &' >> /start.sh \
     && echo '/usr/share/novnc/utils/novnc_proxy --vnc localhost:5900 --listen 0.0.0.0:6080 &' >> /start.sh \
     && echo 'cd /opt/Everdo && ./everdo --no-sandbox &' >> /start.sh \
