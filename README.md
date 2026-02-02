@@ -41,7 +41,7 @@ Run it:
 
 - `git clone https://github.com/P9k/everdo_dockerized.git` (Clone the Github repository)
 - `cd everdo_dockerized`
-- `docker build -t everdo-docker .` (Build the image)
+- `docker buildx build -t everdo-docker .` (Build the image using the recommended [BuildKit](docs.docker.com/reference/cli/docker/buildx/) method) **or** use the legacy way: `docker build -t everdo-docker .`
 - Edit `compose.yaml` as necessary (`volumes:` section)
 `docker compose up -d` (Run the service in the background)
 
