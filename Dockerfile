@@ -13,7 +13,7 @@ RUN apt-get update && apt-get install -y \
 
 # Download and extract Everdo AppImage
 RUN wget --no-verbose --timeout=30 --tries=3 \
-    https://downloads.everdo.net/electron/Everdo-1.10.4.AppImage \
+    https://downloads.everdo.net/electron/Everdo-1.11.9.AppImage \
     -O /tmp/Everdo.AppImage \
     && chmod +x /tmp/Everdo.AppImage \
     && /tmp/Everdo.AppImage --appimage-extract \
